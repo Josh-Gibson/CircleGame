@@ -1,0 +1,37 @@
+==BUILD==
+- This program was build with Java version 9.0.4. If there are any issues running the program, the version may not be compatible.
+
+==Restarting==
+- This program does not have a built in restart option. You must close the game and open a new instance.
+
+==Options==
+-The options in this game are configured with options.txt
+
+DO NOT:
+- Try to add more options
+	- The option amount is hardcoded, and more options will break the game
+- Change the delimiter
+	- The delimiter ( : ) is what separates the option name from it's value
+	- The delimiter is hardcoded, and changing it will break the game
+- Use an improper value
+	- Options with words are strings. 
+	- Options with whole numbers are integers.
+	- Options with a decimal are doubles.
+	- Options with true/false are booleans.
+	
+	- These values are in order and hardcoded. Improper use will not allow the game to start.
+	- Please make sure either extinction or elimination are spelled right, and that they are lowercase
+
+-Default_Options_Restore-
+#if you happen to mess up options.txt, please copy and paste these default values UNDER THE LINE into the file. DO NOT EDIT/REMOVE THESE VALUES
+
+_________________________________
+enable physics collisions:true
+gamemode:extinction
+circle_amount:20
+circle_radius:20
+circle_spacing:3.0
+speed:1
+collide_with_dead:true
+timer_enabled:false
+time_minutes:1
